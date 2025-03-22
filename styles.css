@@ -125,7 +125,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    nav li{
+    nav li {
         background-color: #d9043d;
         width: 100%;
     }
@@ -141,6 +141,7 @@ footer {
 }
 
 /* Devices between 768px and 1000px */
+/* between 768px and 1000px */
 @media screen and (min-width: 769px) and (max-width: 1000px) {
     #gallery-container {
         grid-template-columns: 1fr 1fr;
@@ -150,7 +151,7 @@ footer {
         grid-column: span 2;
     }
 
-    nav{
+    nav {
         background-color: #d9043d;
     }
 
@@ -165,7 +166,7 @@ footer {
     }
 }
 
-/* Devices greater than 1000px */
+/* greater than 1000px */
 @media screen and (min-width: 1001px) {
     #gallery-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -174,10 +175,11 @@ footer {
     #gallery-container figure:last-child {
         grid-column: span 2;
     }
-    nav{
+
+    nav {
         background-color: #d9043d;
     }
-    
+
     nav ul {
         flex-direction: row;
         justify-content: center;
@@ -186,5 +188,29 @@ footer {
 
     nav a {
         padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Put nav under header（only bigger or equal to 769px works） */
+@media screen and (min-width: 769px) {
+    .header-container {
+        position: relative;
+        padding-bottom: 4rem; 
+    }
+
+    nav {
+        width: 100%;
+        background-color: #d9043d;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
     }
 }
