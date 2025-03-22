@@ -119,7 +119,7 @@ footer {
     padding: 1rem;
 }
 
-/* Devices less than 768px */
+/* Device less than 768px */
 @media screen and (max-width: 768px) {
     #gallery-container {
         grid-template-columns: 1fr;
@@ -140,8 +140,7 @@ footer {
     }
 }
 
-/* Devices between 768px and 1000px */
-/* between 768px and 1000px */
+/* Device between 768px and 1000px */
 @media screen and (min-width: 769px) and (max-width: 1000px) {
     #gallery-container {
         grid-template-columns: 1fr 1fr;
